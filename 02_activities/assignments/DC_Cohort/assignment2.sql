@@ -210,12 +210,14 @@ Before your final group by you should have the product of those two queries (x*y
 SELECT
     v.vendor_name,
     p.product_name,
-    COUNT(c.customer_id) * 5 * p.unit_price AS total_revenue
+    COUNT(c.customer_id) * 5 * vi.original_price AS total_revenue
 FROM vendor_inventory vi
-JOIN vendor v ON vi.vendor_id = v.vendor_id
-JOIN product p ON vi.product_id = p.product_id
+JOIN vendor v 
+    ON vi.vendor_id = v.vendor_id
+JOIN product p 
+    ON vi.product_id = p.product_id
 CROSS JOIN customer c
-GROUP BY v.vendor_name, p.product_name;
+GROUP BY v.vendor_name, p.product_name, vi.original_price;
 
 --END QUERY
 
@@ -284,6 +286,9 @@ Finally, make sure you have a WHERE statement to update the right row,
 	you'll need to use product_units.product_id to refer to the correct row within the product_units table. 
 When you have all of these components, you can run the update statement. */
 --QUERY 12
+
+ALTER TABLE product_units
+ADD current_quantity INT;
 
 UPDATE product_units
 SET current_quantity = COALESCE((
