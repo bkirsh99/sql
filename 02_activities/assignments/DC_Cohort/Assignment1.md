@@ -106,6 +106,8 @@ Please do not pick the exact same tables that I have already diagrammed. For exa
 	- <img src="./images/01_farmers_market_conceptual_model.png" width="600">
 - The column names can be found in a few spots (DB Schema window in the bottom right, the Database Structure tab in the main window by expanding each table entry, at the top of the Browse Data tab in the main window)
 
+<img src="./images/01_model_answer.png" width="600">
+
 ***
 
 ## Section 2:
@@ -209,5 +211,16 @@ Consider, for example, concepts of fariness, inequality, social structures, marg
 
 
 ```
-Your thoughts...
+The article by Qadri highlights that databases are not neutral tools for storing and organizing information. Instead, they embed specific social, cultural, and political values. The case of Pakistan’s digital ID system shows how design decisions reflect broader societal norms, such as what a “valid” family should look like. However, when these assumptions are translated into rigid database rules, they can exclude or marginalize people who do not fit those norms.
+
+This idea of standardization applies to many data systems we encounter in everyday life. For example, forms often require selecting from predefined options for gender identity, race, or relationship status. While this may seem practical, it forces people into limited categories that may not accurately reflect their identities. As a result, individuals who do not fit these strict classifications are either misrepresented or excluded entirely. Like the NADRA system, these choices reflect societal expectations rather than the full diversity of human experience.
+
+Another key value embedded in data systems is efficiency. Structured data is easier to process, analyze, and scale, which is essential for large systems. However, prioritizing efficiency often comes at the cost of nuance. People whose lives are more complex than what the system allows for may face barriers when accessing services. This reveals how technological systems are often optimized for the majority, rather than designed to ensure fairness for all.
+
+These design choices also contribute to reinforcing existing social hierarchies. Although databases often appear objective, they are shaped by historical and societal power dynamics. As a result, they can reproduce inequalities related to gender, family structure, or socioeconomic status.
+
+A related issue is marginalization through invisibility. Data systems can determine who is recognized and who is excluded from society. In the NADRA system, individuals who cannot be linked to a recognized family structure may effectively “not exist” in the database. Because access to rights and services depends on being recognized, this exclusion can have serious consequences.
+
+In conclusion, the databases we interact with daily embed values such as standardization, efficiency, and existing social norms. While these systems improve organization and access, they also risk reinforcing inequality and excluding those who do not fit predefined categories. Qadri’s article emphasizes the importance of viewing databases as socio-technical systems, raising ethical questions about accountability—specifically, who designs these systems and whose values are prioritized.
+
 ```
