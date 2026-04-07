@@ -149,7 +149,7 @@ FROM product;
 
 SELECT *
 FROM product
-WHERE product_size REGEXP '[0-9]';
+WHERE product_size REGEXP '[0-9]'
 
 --END QUERY
 
